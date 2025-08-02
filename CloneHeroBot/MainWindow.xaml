@@ -1,0 +1,44 @@
+﻿<Window x:Class="CloneHeroBot.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CloneHeroBot"
+        mc:Ignorable="d"
+        Title="MainWindow"
+        Height="450"
+        Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <Label x:Name="ColorDebug"
+               Grid.Row="2"
+               Grid.Column="2" />
+
+        <Button x:Name="Open_Colors_Picker"
+                Height="50"
+                Margin="10"
+                Content="Colors picker"
+                Click="Open_Colors_Picker_Click" />
+        
+        <Button x:Name="Validat_Colors_Picker"
+                Grid.Column="1"
+                Margin="10"
+                Height="50"
+                Content="Validate"
+                Click="Validat_Colors_Picker_Click" />
+    </Grid>
+</Window>

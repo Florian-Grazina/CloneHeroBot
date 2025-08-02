@@ -1,0 +1,19 @@
+﻿<Window x:Class="CloneHeroBot.ColorPickerWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Width="50"
+        Height="50"
+        WindowStyle="None"
+        AllowsTransparency="True"
+        Background="Transparent"
+        Topmost="True"
+        ShowInTaskbar="False"
+        Cursor="SizeAll"
+        MouseLeftButtonDown="Window_MouseLeftButtonDown">
+    <Border BorderBrush="Black"
+            BorderThickness="2">
+        <Border BorderBrush="{Binding BackgroundColor}"
+                Opacity=".5"
+                BorderThickness="20" />
+    </Border>
+</Window>
